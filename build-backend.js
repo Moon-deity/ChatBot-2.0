@@ -1,6 +1,6 @@
-const { build } = require('esbuild');
-const { copyFile } = require('fs/promises');
-const { join } = require('path');
+import { build } from 'esbuild';
+import { copyFile } from 'fs/promises';
+import { join } from 'path';
 
 async function buildBackend() {
     await build({
